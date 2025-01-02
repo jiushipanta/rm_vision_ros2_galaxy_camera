@@ -30,7 +30,7 @@ if(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
 elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
   target_link_directories(${PROJECT_NAME} PUBLIC GalaxySDK/lib/arm64)
   install(
-    DIRECTORY GalaxySDK/lib/arm64/
+    DIRECTORY GalaxySDK/lib/armv8/
     DESTINATION lib
   )
 else()
